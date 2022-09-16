@@ -1,12 +1,17 @@
+import time
 puntaje = 0
 opciones = ["a", "b", "c", "d", "A", "B", "C", "D"]
 
 print("Bienvenido a mi trivia sobre Apple.\n")
+time.sleep(3)
 
 print("A continuación pondremos a prueba tus conocimientos\n")
+time.sleep(3)
 
 nombre = input("Ingresa tu nombre: ")
 print("\nHola",nombre,"responde las siguientes preguntas escribiendo la letra de la alternativa correcta y presionando 'Enter' para enviar la respuesta: \n")
+
+time.sleep(4)
 
 print("1° ¿Cuál es la última versión de IPhone en el mercado")
 print("a) IPhone 12")
@@ -21,7 +26,7 @@ if respuesta_1.lower() == "c":
   print("¡Correcto", nombre,"! +4")
   puntaje = puntaje + 4
 else:
-  print("Incorrecto ", nombre,":(")
+  print("Incorrecto ", nombre,":( La opción correcta es la C")
 
 print("")
   
@@ -39,11 +44,11 @@ if respuesta_2.lower() == "b":
   print("¡Correcto", nombre,"! +4")
   puntaje = puntaje + 4
 else:
-  print("Incorrecto ", nombre,":(")
+  print("Incorrecto ", nombre,":( La opción correcta es la B")
 
 print("")
   
-print("3° ¿Cuántos tipos de Apple Watch se venden en el 2022")
+print("3° ¿Cuántos tipos de Apple Watch se venden en el 2022?")
 print("a) 3 tipos")
 print("b) 2 tipos")
 print("c) 1 tipos")
@@ -57,7 +62,7 @@ if respuesta_3.lower() == "a":
   print("¡Correcto", nombre,"! +4")
   puntaje = puntaje + 4
 else:
-  print("Incorrecto ", nombre,":(")
+  print("Incorrecto ", nombre,":( La opción correcta es la A")
 
 print("")
   
@@ -75,7 +80,7 @@ if respuesta_4.lower() == "d":
   print("¡Correcto", nombre,"! +4")
   puntaje = puntaje + 4
 else:
-  print("Incorrecto ", nombre,":(")
+  print("Incorrecto ", nombre,":( La opción correcta es la D")
   
 print("")
   
@@ -93,6 +98,6 @@ if respuesta_5.lower() == "c":
   print("¡Correcto", nombre,"! +4")
   puntaje = puntaje + 4
 else:
-  print("Incorrecto ", nombre,":(")
+  print("Incorrecto ", nombre,":( La opción correcta es la C")
 
 print("\nHaz terminado, el puntaje obtenido es: " ,puntaje)
